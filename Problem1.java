@@ -5,12 +5,10 @@ public class Problem1 {
     // Method using charAt()
     public static boolean compareStrings(String s1, String s2) {
 
-        // If lengths differ → not equal
         if (s1.length() != s2.length()) {
             return false;
         }
 
-        // Compare character by character
         for (int i = 0; i < s1.length(); i++) {
             if (s1.charAt(i) != s2.charAt(i)) {
                 return false;
@@ -31,7 +29,6 @@ public class Problem1 {
         String str2 = input.next();
 
         boolean resultCharAt = compareStrings(str1, str2);
-
         boolean resultBuiltIn = str1.equals(str2);
 
         System.out.println("\nUsing charAt(): " + resultCharAt);
